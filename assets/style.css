@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box; /*cuando aplicamos un ancho o un alto adapta el contenido para respetar las dimensiones dadas y que no se escape del contenedor*/
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+#banner{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: 0% 20%;
+}
+
+.banner{ /* puedo borrar este selector ya que solo lo uso para visualizar el espacio que ocupa el banner*/
+    background-color: aquamarine;
+}
+
+.banner img{
+    width : 100px;
+}
