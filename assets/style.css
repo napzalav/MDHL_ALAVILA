@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 *{
     box-sizing: border-box; /*cuando aplicamos un ancho o un alto adapta el contenido para respetar las dimensiones dadas y que no se escape del contenedor*/
     padding: 0;
@@ -8,17 +10,67 @@ img{
     max-width: 100%;
 }
 
-#banner{
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    object-position: 0% 20%;
+h1,h2{
+    font-family: 'Roboto', sans-serif;
 }
 
-.banner{ /* puedo borrar este selector ya que solo lo uso para visualizar el espacio que ocupa el banner*/
-    background-color: aquamarine;
+/* BANNER */
+header{
+    position: relative;
+    background-image: url(./design1_image1.jpg);
+    background-size: cover;
+    background-position: 0% 15%;
+    height: 250px;
+    padding: 10px;
+    /*object-fit: cover;*/
+    /*object-position: 0% 20%;*/
 }
 
-.banner img{
+header h1{
+    -webkit-text-fill-color: rgb(246, 234, 10);
+    -webkit-text-stroke: 0.01px rgb(255, 166, 0);
+    /* color: rgb(246, 234, 10); */
+}
+
+header img{
     width : 100px;
+    position: absolute;
+    right: 40px;
+    bottom: -42px;
+    /* top: 80%; */
+    /* background-color: rgba(38, 60, 83, 0.1); */
+}
+
+main h2{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
+
+main div{
+    /* background-color: aliceblue; */
+    /* border: 3px solid rgba(218, 165, 32, 0.355); */
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.uno{
+    width: 15%;
+}
+
+.dos{
+    width: 75%;
+}
+
+nav a{
+    display: block;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-bottom: 10px;
+    padding-left: 15px;
 }
