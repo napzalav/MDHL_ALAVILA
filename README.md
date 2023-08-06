@@ -1,2 +1,2 @@
 # MDHL_ALAVILA
-MindHub Frontend - TASK 1 - Submit Create an Initial Website Mockup
+MindHub Frontend - TASK 2 - "Add Style to the Website with CSS"
