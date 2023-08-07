@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    box-sizing: border-box; /*cuando aplicamos un ancho o un alto adapta el contenido para respetar las dimensiones dadas y que no se escape del contenedor*/
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2,a{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header .menu{
+    position: relative;
+}
+header h1{
+    font-size: 5vw;
+}
+
+header nav{
+    position: absolute;
+    right: 0px;
+    top: 85%;
+    z-index: 1;
+}
+
+nav a{
+    background-color: rgb(54, 97, 214);
+    color: aliceblue;
+    border: 1px solid black;
+    padding: 1px 2px;
+}
+
+header nav a:last-child{
+    margin-right: 1px;
+}
+
+header h1{
+    -webkit-text-fill-color: rgb(246, 234, 10);
+    -webkit-text-stroke: 0.01px rgb(255, 166, 0);
+    /* color: rgb(246, 234, 10); */
+}
+
+header .banner{
+    position: relative;
+    background-image: url(./design1_image1.jpg);
+    background-size: cover;
+    background-position: 0% 15%;
+    height: 250px;
+    padding: 10px;
+}
+
+main h2{
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+main img{
+    width : 100px;
+}
+
+main div{
+    /* background-color: aliceblue; */
+    /* border: 3px solid rgba(218, 165, 32, 0.355); */
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo{
+    width: 15%;
+}
+
+.info{
+    width: 75%;
+}
+
+p{
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
