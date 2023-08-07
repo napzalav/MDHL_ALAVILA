@@ -15,19 +15,25 @@ h1,h2,a{
 }
 
 /* HEADER */
-header .menu{
-    position: relative;
-}
 header h1{
-    font-size: 5vw;
+    text-align: center;
+    font-size: 7vw;
     -webkit-text-fill-color: rgb(246, 234, 10);
     -webkit-text-stroke: 0.01px rgb(255, 166, 0);
 }
 
+header .menu{
+    position: relative;
+    background-image: url(./design1_image1.jpg);
+    background-size: cover;
+    background-position: 0% 15%;
+    height: 250px;
+}
+
 header nav{
     position: absolute;
-    right: 0px;
-    top: 85%;
+    top: 6px;
+    left: 40%;
     z-index: 1;
 }
 
@@ -35,31 +41,20 @@ nav a{
     background-color: rgb(54, 97, 214);
     color: aliceblue;
     border: 1px solid black;
-    padding: 1px 2px;
+    padding: 5px 5px;
 }
 
-header nav a:last-child{
-    margin-right: 1px;
-}
-
-header .banner{
-    position: relative;
-    background-image: url(./design1_image1.jpg);
-    background-size: cover;
-    background-position: 0% 15%;
-    height: 250px;
-    padding: 10px;
+header .menu img{
+    position: absolute;
+    width : 100px;
+    bottom: -17%;
 }
 
 main h2{
-    border: 2px solid black;
-    color: black;
+    background-color: black;
+    color: aliceblue;
     padding: 5px;
     text-align: center;
-}
-
-main img{
-    width : 100px;
 }
 
 main div{
@@ -71,7 +66,7 @@ main div{
     vertical-align: top;
 }
 
-.logo{
+.game{
     width: 15%;
 }
 
