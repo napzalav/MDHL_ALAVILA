@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
-*{
-    box-sizing: border-box; /*cuando aplicamos un ancho o un alto adapta el contenido para respetar las dimensiones dadas y que no se escape del contenedor*/
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-img{
-    max-width: 100%;
-}
-
-h1,h2,a{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
-header h1{
-    text-align: center;
-    font-size: 7vw;
-    -webkit-text-fill-color: rgb(246, 234, 10);
-    -webkit-text-stroke: 0.01px rgb(255, 166, 0);
+header {
+    /* background-image: url(./design1_image1.jpg);
+    background-size: cover;
+    background-position: 0% 15%; */
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 header .menu{
@@ -30,51 +30,131 @@ header .menu{
     height: 250px;
 }
 
-header nav{
-    position: absolute;
-    top: 6px;
-    left: 40%;
-    z-index: 1;
+header h1 {
+    background-color: rgb(164, 20, 20);
+    /* background-color: rgb(5, 0, 100); */
+    font-size: 7vw;
+    color: rgb(246, 234, 10);
+    -webkit-text-stroke: 0.01px rgba(255, 166, 0, 0.7);
+    text-shadow: 0.01px 0px rgb(255, 166, 0);
+    /* margin-bottom: 10px; */
 }
 
-nav a{
+header nav {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+}
+
+/* nav a {
     background-color: rgb(54, 97, 214);
+    color: rgb(246, 234, 10);
+    border: 1px solid black;
+    padding: 1px 3px;
+    margin: 0 2px;
+    text-decoration: none;
+} */
+
+nav a {
+    background-color: rgb(164, 20, 20);
+    /* background-color: rgb(5, 0, 100); */
     color: aliceblue;
     border: 1px solid black;
     padding: 5px 5px;
+    margin: 0 2px;
+    text-decoration: none;
+    position: relative; /* Para alinear sombra al texto */
 }
 
-header .menu img{
+nav a::before {
+    content: ''; /* Pseudo-elemento para la sombra */
     position: absolute;
-    width : 100px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(135deg, rgb(246, 234, 10), transparent 50%, rgb(255, 166, 0, 0.7));
+    z-index: -1; /* Detrás del botón */
+    border-radius: 5px; /* Misma forma que el botón */
+}
+
+nav a:hover {
+    background-color: rgb(246, 234, 10);
+    color: crimson;
+    /* text-shadow: 0 0 10px rgb(0, 21, 255); Texto con resplandor */
+    box-shadow: 0 0 20px rgb(246, 234, 10); /* Sombra alrededor del botón */
+    transition: 0.5s; /* Efecto de transición suave */
+}
+
+
+/* Redondear las esquinas izquierdas del primer enlace */
+nav a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Redondear las esquinas derechas del último enlace */
+nav a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header .menu img {
+    position: absolute;
+    width: 100px;
     bottom: -17%;
 }
 
-main h2{
-    background-color: black;
-    color: aliceblue;
-    padding: 5px;
-    text-align: center;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* padding: 10px; */
 }
 
-main div{
-    /* background-color: aliceblue; */
-    /* border: 3px solid rgba(218, 165, 32, 0.355); */
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.game{
+.game {
     width: 15%;
 }
 
-.info{
+.info {
     width: 75%;
+    /* background-color: aliceblue;
+    border: 3px solid rgba(218, 165, 32, 0.355); */
+    padding: 5px;
+    /* margin: 10px; */
 }
 
-p{
+h2 {
+    background-color: rgb(164, 20, 20);
+
+    /* background-color: rgb(5, 0, 100); */
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+p {
     margin-bottom: 10px;
     padding-left: 15px;
+}
+
+#logo {
+    width: 100px;
+    bottom: -43px;
+}
+
+#game {
+    max-width: 100%;
+    margin-bottom: 10px;
 }
