@@ -1,85 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
-*{
-    box-sizing: border-box; /*cuando aplicamos un ancho o un alto adapta el contenido para respetar las dimensiones dadas y que no se escape del contenedor*/
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-img{
-    max-width: 100%;
-}
-
-h1,h2,a{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
-header .menu{
+header {
+    height: 250px;
+    /* padding: 10px; */
     position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
 }
-header h1{
+
+header h1 {
     font-size: 5vw;
-    -webkit-text-fill-color: rgb(246, 234, 10);
-    -webkit-text-stroke: 0.01px rgb(255, 166, 0);
+    /* color: rgb(246, 234, 10);
+    text-shadow: 0.01px 0px rgb(255, 166, 0); */
+    color: rgb(255, 242, 0);
+    -webkit-text-stroke: 0.01px rgba(255, 166, 0, 0.7);
+    text-shadow: 0.01px 0px rgb(255, 166, 0);
 }
 
-header nav{
+header nav {
     position: absolute;
-    right: 0px;
-    top: 85%;
+    right: 0;
+    /* bottom: 10px; */
     z-index: 1;
+    top: 5.5vw;
 }
 
-nav a{
+nav a {
     background-color: rgb(54, 97, 214);
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: rgb(246, 234, 10);
     border: 1px solid black;
-    padding: 1px 2px;
-}
-
-header nav a:last-child{
+    padding: 1px 3px;
     margin-right: 1px;
+    text-decoration: none;
 }
 
-header .banner{
-    position: relative;
+/* Redondear las esquinas izquierdas del primer enlace */
+nav a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Redondear las esquinas derechas del último enlace */
+nav a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header .banner {
     background-image: url(./design1_image1.jpg);
     background-size: cover;
     background-position: 0% 15%;
-    height: 250px;
-    padding: 10px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 0% 15%;
 }
 
-main h2{
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+}
+
+.logo {
+    width: 15%;
+}
+
+.info {
+    width: 75%;
+    /* background-color: aliceblue;
+    border: 3px solid rgba(218, 165, 32, 0.355); */
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
     border: 2px solid black;
     color: black;
     padding: 5px;
     text-align: center;
+    width: 100%;
 }
 
-main img{
-    width : 100px;
+h4 {
+    margin-bottom: 5px;
+    padding-left: 15px;
 }
 
-main div{
-    /* background-color: aliceblue; */
-    /* border: 3px solid rgba(218, 165, 32, 0.355); */
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo{
-    width: 15%;
-}
-
-.info{
-    width: 75%;
-}
-
-p{
+p {
     margin-bottom: 10px;
     padding-left: 15px;
+}
+
+#logo {
+    width: 100px;
 }
