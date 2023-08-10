@@ -31,7 +31,10 @@ header .menu{
 }
 
 header h1 {
-    background-color: rgb(164, 20, 20);
+    background: rgb(107,17,6);
+    background: linear-gradient(90deg, rgba(107,17,6,1) 0%, rgba(209,70,24,1) 48%, rgba(209,144,30,1) 99%);
+    /* background-color: #4f0303; */
+    /* background-color: rgb(164, 20, 20); */
     /* background-color: rgb(5, 0, 100); */
     font-size: 7vw;
     color: rgb(246, 234, 10);
@@ -59,7 +62,8 @@ header nav {
 } */
 
 nav a {
-    background-color: rgb(164, 20, 20);
+    background-color: #800040;
+    /* background-color: rgb(164, 20, 20); */
     /* background-color: rgb(5, 0, 100); */
     color: aliceblue;
     border: 1px solid black;
@@ -128,8 +132,10 @@ main {
 }
 
 h2 {
-    background-color: rgb(164, 20, 20);
-
+    background: rgb(107,17,6);
+    background: linear-gradient(90deg, rgba(107,17,6,1) 0%, rgba(209,70,24,1) 48%, rgba(209,144,30,1) 99%);
+    /* background-color: #550f2c; */
+    /* background-color: rgb(164, 20, 20); */
     /* background-color: rgb(5, 0, 100); */
     color: aliceblue;
     padding: 5px;
@@ -157,4 +163,52 @@ p {
 #game {
     max-width: 100%;
     margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+table {
+    height: 50vh;
+    width: 100%;
+}
+
+table, th, td {
+    /* border: 1px solid; */
+    text-align: center;
+    color: darkblue;
+}
+
+th{
+    background-color: #800040;
+    color: aliceblue;
+}
+
+td:hover{
+    background-color: #800040;
+    /* color: aliceblue; */
+    color: rgb(255, 242, 0);
+}
+
+tr:nth-child(odd){
+    background-color: #ffe4e1;
+    /* color: darkblue; */
+}
+
+.info .title{
+    text-align: center;
+}
+
+dt, dd{
+    margin: 20px;
+}
+dd {
+    margin-left: 30px;
+}
+
+ul{
+    list-style: circle;
+    margin-left: 20px;
 }

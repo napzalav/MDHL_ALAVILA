@@ -111,3 +111,50 @@ p {
 #logo {
     width: 100px;
 }
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+table {
+    height: 50vh;
+    width: 100%;
+}
+
+table, th, td {
+    /* border: 1px solid; */
+    text-align: center;
+    color: darkblue;
+}
+
+th{
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+td:hover{
+    background-color: darkblue;
+    /* color: aliceblue; */
+    color: rgb(255, 242, 0);
+}
+
+tr:nth-child(odd){
+    background-color: lightcyan;
+    /* color: darkblue; */
+}
+
+.info .title{
+    text-align: center;
+}
+
+dt, dd{
+    margin: 20px;
+}
+dd {
+    margin-left: 30px;
+}
+
+ul{
+    list-style: circle;
+    margin-left: 20px;
+}
