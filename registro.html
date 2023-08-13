@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>Mighty Ducks Hockey League</h1>
+            <img id="logo" src="./assets/Logo_Mighty_ducks.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <h2>Registration Form</h2>
+        <div class="container">
+            <div class="menu">
+                <nav>
+                    <a href="./homepage.html">HOME</a>
+                    <a href="./aboutMDHL.html">About MDHL</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./game_info.html">Game Information</a>
+                    <a href="./rules.html">Rules</a>
+                    <a href="./registro.html">Registration Form</a>
+                    <a href="./mapas.html">Maps</a>
+                </nav>
+            </div>
+            <div class="info">
+                <form action="./show_data.html" method="get">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+
+                        <label >Nombre
+                            <input type="text" name="nombre" id="nombre" required>
+                        </label>
+                        <label>Apellido
+                            <input type="text" name="apellido" id="apellido" required>
+                        </label><br>
+
+                        <label>Dirección
+                            <input type="text" name="direccion" id="direccion" required>
+                        </label><br>
+
+                        <label>Ciudad
+                            <input type="text" name="ciudad" id="ciudad" required>
+                        </label>
+                        <label>Código Postal
+                            <input type="text" name="cp" id="cp" required>
+                        </label><br>
+
+                        <label>Fecha de nacimiento
+                            <input type="date" name="nac" id="nac" required>
+                        </label>
+
+                        <span>Sexo:</span>
+                        <label>Masculino
+                            <input type="radio" name="sexo" id="m">
+                        </label>
+                        <label>Femenino
+                            <input type="radio" name="sexo" id="f">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos escolares</legend>
+
+                        <span>Grado escolar:</span>
+
+                        <label>Pre-School
+                            <input type="radio" name="grado" id="pre">
+                        </label>
+                        <label>1st
+                            <input type="radio" name="grado" id="1">
+                        </label>
+                        <label>2nd
+                            <input type="radio" name="grado" id="2">
+                        </label>
+                        <label>3rd
+                            <input type="radio" name="grado" id="3">
+                        </label>
+                        <label>4th
+                            <input type="radio" name="grado" id="4">
+                        </label>
+                        <label>5th
+                            <input type="radio" name="grado" id="5">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="basico">
+                        <legend>Cerca de qué escuela primaria vives?</legend>
+
+                        <span>Escuela más cercana:</span>
+                        <label>AJ Katzenmaier
+                            <input type="radio" name="escuela" id="katzenmaier">
+                        </label>
+                        <label>Marjorie P Hart
+                            <input type="radio" name="escuela" id="hart">
+                        </label>
+                        <label>Greenbay
+                            <input type="radio" name="escuela" id="greenbay">
+                        </label>
+                        <label>North Elementary
+                            <input type="radio" name="escuela" id="north">
+                        </label>
+                        <label>Howard A Yeager
+                            <input type="radio" name="escuela" id="yeager">
+                        </label>
+                        <label>South Elementary
+                            <input type="radio" name="escuela" id="south">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>En qué posición o posiciones juegas normalmente? (marque todas las que juega)</legend>
+
+                        <span>Puestos:</span>
+
+                        <label>Delantero
+                            <input type="checkbox" name="puesto" id="del">
+                        </label>
+                        <label>Defensor
+                            <input type="checkbox" name="puesto" id="def">
+                        </label>
+                        <label>Mediocampista
+                            <input type="checkbox" name="puesto" id="med">
+                        </label>
+                        <label>Arquero
+                            <input type="checkbox" name="puesto" id="arq">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Talle del uniforme</legend>
+                        <span>Selecciona tu talle:</span>
+
+                        <label>Juvenil
+                            <input type="radio" name="talle" id="j">
+                        </label>
+                        <label>Juvenil mediano
+                            <input type="radio" name="talle" id="jm">
+                        </label>
+                        <label>Juvenil grande
+                            <input type="radio" name="talle" id="jg">
+                        </label>
+                        <label>Pequeño
+                            <input type="radio" name="talle" id="p">
+                        </label>
+                        <label>Mediano
+                            <input type="radio" name="talle" id="m">
+                        </label>
+                        <label>Grande
+                            <input type="radio" name="talle" id="g">
+                        </label>
+                        <label>Extra-grande
+                            <input type="radio" name="talle" id="xg">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Permiso para jugar</legend>
+                        <p>Yo, el padre o tutor del menor inscrito, acepto que el inscripto y yo acataremos todas las reglas de la Mighty Ducks Hockey League (MDHL). Reconociendo la posibilidad de lesiones físicas asociadas con el hockey y en consideración a que la "Liga" acepte al inscripto en sus programas y actividades de hockey, por la presente libero, descargo y/o indemnizo a la MDHL, sus empleados y personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra cualquier reclamación por o en nombre del inscrito como resultado de la participación del inscrito en el programa y/o siendo transportado hacia o desde las actividades patrocinadas por la MDHL, cuyo transporte.</p>
+                        <p>Al firmar a continuación, acepto y autorizo lo anterior. Además, al firmar a continuación, también reconozco que he leído la política de cancelación y acepto sus términos.</p>
+
+                        <label>Firma del Padre/Tutor:
+                            <input type="text" name="firma" id="firma" required>
+                        </label>
+                        <br>
+                        <label>Date
+                            <input type="date" name="fecha" id="fecha" required>
+                        </label>
+
+                        <button type="submit" name="acepto">¡Estoy de acuerdo!</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Hecho en casa con ❤</p>
+            <p>Todos los derechos reservados ©</p>
+            <p>...Los izquierdos tambien!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
