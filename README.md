@@ -1,5 +1,5 @@
 # MDHL_ALAVILA
-MindHub Frontend - TASK 3 - "Present Data in Lists and Tables"
+MindHub Frontend - TASK 3 - "Add Forms and Maps"
 
 Design1:
 homepage.html
@@ -7,6 +7,8 @@ aboutMDHL.html
 contact.html
 game_info.html
 rules.html
+registro.html
+mapas.html
 style.css
 
 Design2:
