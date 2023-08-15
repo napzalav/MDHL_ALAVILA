@@ -9,6 +9,5 @@ contact.html
 game_info.html
 rules.html
 registro.html
-mapas.html
 style.css
 
