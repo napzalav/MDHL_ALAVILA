@@ -1,5 +1,6 @@
 # MDHL_ALAVILA
-MindHub Frontend - TASK 3 - "Add Forms and Maps"
+MindHub Frontend - TASK 4 - "Add Forms and Maps"
+******se entrega Design1 correspondiente a los archivos: ******
 
 Design1:
 homepage.html
@@ -11,18 +12,3 @@ registro.html
 mapas.html
 style.css
 
-Design2:
-2home2.html
-2about2.html
-2contact2.html
-2game_info2.html
-2rules2.html
-design2.html
-
-Diseño Propio:
-3home3.html
-3about3.html
-3contact3.html
-3game_info3.html
-3rules3.html
-propio.css
