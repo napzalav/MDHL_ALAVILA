@@ -61,11 +61,21 @@ main .container{
 }
 /*dejo 5% vacio para que el texto no se vea hasta el final del contenedor */
 .info {
-    /* width: 80%; */
+    width: 100%;
     /* background-color: aliceblue;
     border: 3px solid rgba(218, 165, 32, 0.355); */
     /* padding: 5px; */
-    margin: 15px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.container .info a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container .info td a{
+    color: darkblue;
 }
 
 .menu nav a {
@@ -101,6 +111,8 @@ p {
     padding-left: 15px;
 }
 
+/********TABLAS**********/
+
 table {
     height: 50vh;
     width: 100%;
@@ -118,9 +130,11 @@ th{
 }
 
 td:hover{
-    background-color: darkblue;
+    background-color: rgb(255, 242, 0);
+    /* background-color: darkblue; */
     /* color: aliceblue; */
-    color: rgb(255, 242, 0);
+    /* color: rgb(255, 242, 0); */
+    transition: 0.5s;
 }
 
 tr:nth-child(odd){
@@ -209,6 +223,7 @@ form span{
 
 form legend {
     font-weight: bold;
+    text-align: center;
 }
 
 form label{/*con display inblocks podia asimiliarlo al draft pero los casilleros quedan cortos*/
